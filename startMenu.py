@@ -96,7 +96,7 @@ def guess(lowWords, mistakes, correctGuess, answerSheet):
                 break
             else:
                 print("Input not in grid")
-               
+
     while True:
         submit = input("Submit (y/n): ").lower()                #Asks the user to submit the guessed words or not
         if submit == "y":
@@ -158,7 +158,7 @@ def showGrid(lowWords, correctGuess, answerSheet):
                 formattedWord = f"{word:^20}"
                 rowContent += formattedWord
             print(f"| {rowContent:^80} |")
-                       
+
     for category, value in answerSheet.items():                     #Get the value of the category that were guessed correctly
         if category in correctGuess:                                
             for word in correctGuess[category]:
@@ -210,7 +210,7 @@ def text():
                                                 ░░░██║░░░██║░░██║
                                                 ░░░██║░░░╚█████╔╝
                                                 ░░░╚═╝░░░░╚════╝░
-          
+
 ███╗░░██╗██╗░░░██╗████████╗     ░█████╗░░█████╗░███╗░░██╗███╗░░██╗███████╗░█████╗░████████╗██╗░█████╗░███╗░░██╗░██████╗
 ████╗░██║╚██╗░██╔╝╚══██╔══╝     ██╔══██╗██╔══██╗████╗░██║████╗░██║██╔════╝██╔══██╗╚══██╔══╝██║██╔══██╗████╗░██║██╔════╝
 ██╔██╗██║░╚████╔╝░░░░██║░░░     ██║░░╚═╝██║░░██║██╔██╗██║██╔██╗██║█████╗░░██║░░╚═╝░░░██║░░░██║██║░░██║██╔██╗██║╚█████╗░

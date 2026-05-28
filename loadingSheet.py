@@ -1,6 +1,6 @@
 def readSheet(): #Read the answerSheet.txt
     answerDictionary = {}
-    with open("answerSheet.txt", "r") as readhandle:
+    with open("CMSC12Project/answerSheet.txt", "r") as readhandle:
         for line in readhandle:
             line = "".join(line.split("\n"))
             key, words = line.split(":")
